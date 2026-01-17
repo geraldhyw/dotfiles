@@ -175,7 +175,7 @@ require("lazy").setup({
 							name = "claude-sonnet-4",
 							provider = "anthropic",
 							model = "claude-sonnet-4-20250514",
-							apiKeyEnvVar = "ANTHROPIC_API_KEY",
+							apikeyenvvar = "ANTHROPIC_API_KEY",
 							thinking = {
 								enabled = true,
 								budgetTokens = 8192,
