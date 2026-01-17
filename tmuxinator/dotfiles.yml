@@ -1,0 +1,6 @@
+name: dotfiles
+root: ~/Documents/Projects/dotfiles
+
+windows:
+  - editor: nvim
+  - bash: git fetch --all

@@ -1,0 +1,41 @@
+[user]
+	email = geraldhooyw@gmail.com
+	name = Gerald
+[core]
+  pager = delta
+	excludesfile = /Users/geraldhyw/.gitignore_global
+  ignorecase = false
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[credential]
+	helper = osxkeychain
+[alias]
+  ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  merge-into = !sh -c '_CURRENT_BRANCH=$(git symbolic-ref --short HEAD) && git checkout $1 && git merge $_CURRENT_BRANCH && git checkout $_CURRENT_BRANCH' -
+  close-into = !sh -c '_CURRENT_BRANCH=$(git symbolic-ref --short HEAD) && git checkout $1 && git merge $_CURRENT_BRANCH && git branch -d $_CURRENT_BRANCH' -
+[commit]
+	template = /Users/stevenyap/.stCommitMsg
+[pull]
+	ff = only
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[init]
+	defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  side-by-side = false
+  navigate = true  # use n and N to move between diff sections
+  dark = true
+  line-numbers = true
+  syntax-theme = none
+[merge]
+  conflictstyle = zdiff3

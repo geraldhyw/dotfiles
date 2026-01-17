@@ -1,0 +1,9 @@
+name: skrym
+root: ~/Documents/Projects/Skrym
+pre_window: nvm use
+
+windows:
+  - editor: nvim
+  - bash1: git fetch --all
+  - bash2: print -S ""
+  - server: print -S ""
