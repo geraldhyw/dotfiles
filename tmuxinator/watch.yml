@@ -1,0 +1,10 @@
+name: watch
+root: ~/Documents/Projects/
+
+windows:
+  - main:
+      panes:
+        - print -S ""
+        - print -S ""
+      layout: main-vertical
+  - bash: echo 

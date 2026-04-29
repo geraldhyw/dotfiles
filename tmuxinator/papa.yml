@@ -1,0 +1,10 @@
+name: papa
+root: ~/Documents/Projects/papsg
+pre_window: nvm use
+
+windows:
+  - editor: nvim
+  - bash1: git fetch --all
+  - bash2: print -S ""
+  - apiWeb: print -S "npm run start"
+  - mobile: print -S "npm run start:mobile"

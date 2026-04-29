@@ -74,3 +74,12 @@ export CPPFLAGS="-I/opt/homebrew/opt/ruby/include:$CPPFLAGS"
 if [ -f "$HOME/.zsh_secrets" ]; then
   source "$HOME/.zsh_secrets"
 fi
+
+# MySQL
+export PATH="/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
+
+# Android Studio
+export ANDROID_HOME=~/Library/Android/sdk
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
+export PATH=$ANDROID_HOME/emulator:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH

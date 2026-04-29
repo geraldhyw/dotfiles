@@ -97,6 +97,14 @@ vim.keymap.set("n", "<Leader>y", "mcggVGy`c")
 vim.keymap.set("n", "<Leader>w", ":set wrap!<CR>")
 vim.keymap.set("n", "<Leader>l", "<cmd>messages<CR>")
 
+-- Restart LSP
+vim.keymap.set(
+	"n",
+	"<Leader>rl",
+	"<Cmd>LspRestart<CR>",
+	{ silent = true, noremap = true, desc = "Restart the LSP when it hangs" }
+)
+
 --------------------
 --- The plugins ----
 --------------------

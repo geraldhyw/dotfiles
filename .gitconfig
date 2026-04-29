@@ -1,6 +1,3 @@
-[user]
-	email = geraldhooyw@gmail.com
-	name = Gerald
 [core]
   pager = delta
 	excludesfile = /Users/geraldhyw/.gitignore_global
@@ -39,3 +36,8 @@
   syntax-theme = none
 [merge]
   conflictstyle = zdiff3
+[remote "origin"]
+  fetch = +refs/tags/*:refs/tags/* # force remote tag to overwrite local tags
+  tagOpt = --tags
+  prune = true
+  pruneTags = true
